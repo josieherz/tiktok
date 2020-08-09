@@ -141,7 +141,9 @@ nav section h1{
     width:148px;
     height:44px;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding:15px 30px 15px 30px;
 }
 
 .bottombox2{
@@ -160,7 +162,7 @@ nav section h1{
     border: 1px solid yellow;
 }
 
-.linebox23{
+.linebox3{
     flex:24;
     border: 1px solid yellow;
 }
@@ -175,3 +177,24 @@ nav section h1{
     border: 1px solid yellow;
 }
 
+ul{
+    list-style-type: none;
+}
+
+#bolder{
+    font-weight: bold;
+}
+
+li{
+    margin-bottom: 7px;
+}
+
+.bottombox3{
+    height: 90px;
+    display: flex;
+}
+
+.bottombox3 div{
+    flex: 1;
+    border: 1px solid green;
+}
