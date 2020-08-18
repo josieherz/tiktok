@@ -6,9 +6,10 @@ nav{
     height: 70px;
     width: 100%;
    border-bottom: 1px solid gray;   
-
+    
  /*  position: fixed; */
     display: flex;
+    
 }
 
 nav .left{
@@ -16,6 +17,24 @@ nav .left{
     flex: 1;
     align-items: center;
     text-align: center;
+}
+.lightbox{
+    width: 2000px !important;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 100 !important;
+    display: none;
+}
+
+#closelb{
+    padding: 10px;
+    font-size: 20pt;
+}
+#ad{
+    width: 400px;
+    height: 100%;
+    background: white;
+    position: relative;
 }
 nav .middle{
 

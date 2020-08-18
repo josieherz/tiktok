@@ -5,17 +5,14 @@
 <head>
   <title>Website 2</title>
   <link href="Styles.css" rel="stylesheet" type="text/css" />
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="custom.js"> </script>
 </head>
 
 <body>
   <nav>
-
-    <section class="left">
-      <a href=""><img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png"
-          style="width: 38px;position: relative;margin-left: 40%;margin-right: 40%;margin-top: 15px;"></a>
-    </section>
+    
+    <section class="left"></section>
 
     <section class="middle">
       <a href="">
@@ -28,6 +25,16 @@
 
     </section>
   </nav>
+  <div class="lightbox">
+    <div id="ad">
+      <div id="closelb"> x </div>
+    </div>
+    </div>
+  <section class="leftunder">
+    <button id="opnelb"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png"
+        style="width: 38px;position: relative;margin-left: 40%;margin-right: 40%;margin-top: 15px;"></button>
+  </section>
   <div class="outerbox">
 
     <div class="box1">
@@ -44,7 +51,7 @@
       <a><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Eiffel_Tower_Vertical.JPG"></a>
     </div>
     <div class="obox2" style="overflow: none; ">
-      <video width="100%"  autoplay loop style="object-fit: fill; opacity: 99%;">
+      <video width="100%"  autoplay loop  muted style="object-fit: fill; opacity: 99%;">
         <source src="IMG_2140.mov" type="video/mp4" />
         
         Your browser does not support the video tag.
