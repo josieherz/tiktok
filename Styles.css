@@ -1,49 +1,117 @@
-body{
-    margin: 0px;
-    padding:0px;
+@font-face{
+    font-family: tiktok;
+    src: url(/Fonts/ProximaNova-Regular.otf)
 }
-nav{
-    height: 70px;
-    width: 100%;
-   border-bottom: 1px solid gray;   
-    
- /*  position: fixed; */
-    display: flex;
-    
+@font-face{
+    font-family: tiktokbold;
+    src: url(Fonts/Proxima\ Nova\ Bold.otf)
 }
 
-nav .left{
-    
-    flex: 1;
-    align-items: center;
-    text-align: center;
-}
-.lightbox{
-    width: 2000px !important;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.76);
-    z-index: 100 !important;
+::-webkit-scrollbar {
     display: none;
 }
 
-#closelb{
-    padding: 10px;
-    font-size: 20pt;
+body{
+    font-family: tiktok;
+    margin: 0px;
+    padding:0px;  
 }
-#ad{
-    width: 400px;
-    height: 100%;
+
+nav{
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid rgb(165, 162, 162);   
+    position: fixed; 
+    display: flex; 
+    background-color: white;
+    
+     
+}
+
+/*.solid{
     background: white;
-    position: relative;
+}*/
+
+nav .left{
+    
+    flex: .75;
+    align-items: center;
+    text-align: center;
 }
+
+#lightbox{
+    width : 100vw;
+    height : 100vh;
+    background : rgba(0,0,0,.7);
+    position : fixed;
+    z-index : 100;
+    display : none;
+    /*justify-content: center;
+    align-items: center; */
+  }
+
+  #xishere{
+      min-width: 315px;
+      height: 80px;
+      background-color: white;
+      position : fixed;
+  }
+  
+  #closeLB{
+    position : fixed;
+    top : 0px;
+    background-color: white;
+    padding : 12px;
+    font-size : 23pt;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(83, 76, 76);
+  }
+  #ad{
+   
+    min-width : 315px;
+    min-height : 100%;
+    background : white;
+    /*border-radius: 10px;*/
+    position : relative;
+    overflow:scroll;
+  }
+
+  #ad a{
+      text-decoration: none;
+      color:black;
+    
+  }
+
+  #ad a:hover{
+      text-decoration: underline;
+      text-decoration-color: red;
+      
+  }
+
+  #ad h4{
+      margin: 3px 0px;
+      color: grey;
+      margin-left: 35px;
+    font-size: 15px;
+  }
+
+  #ad h5{
+      margin-top: 10px !important;
+      margin-bottom: 15px !important;
+      margin-left:35px !important;
+      font-size: 16px;
+  }
+ 
 nav .middle{
 
-    flex: 10;
+    flex: 11;
     align-items: center;
 }
 nav .middle img{
-    height: 75%;
-    margin-top: 8px;
+    height: 57%;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 nav .right{
     
@@ -52,42 +120,59 @@ nav .right{
     text-align: center;
 
 }
-.watchnow{
-    background-color: crimson;
+
+.login{
+    background-color: rgb(238, 16, 61);
     border: none;
   color: white;
-  padding: 15px 8px;
+  padding: 15px 65px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: bolder;
   margin: 4px 2px;
-  cursor: pointer; 
+  cursor: pointer;
 }
-
 nav section h1{
     text-align: center;
     margin-top: 5px;
 }
 
 .outerbox{
-    width:100wh; border:1px solid rgb(138, 69, 216);
-   height: 200px;
-    display: flex;
+   border:1px solid rgb(255, 255, 255);
+   min-height: 320px;
+  
     /* flex-direction: column-reverse; */
 }
 
+.outerbox .empty{
+    margin-top: 70px;
+    width: 100vw;
+}
+.outerbox .box0{
+    height: 52px;
+    width: 100vw;
+    
+    text-align: center;
+    background-color: #7d88e3;
+    display: inline-block;
+}
+.outerbox .box0 h2{
+    margin-top: 10px;
+    color: white;
+}
 .outerbox .box1{
-    /*
-    width:100px; 
-    height: 100px; */
-    border: 1px solid paleturquoise;   
-    flex:2;
+    
+   /* border: 1px solid paleturquoise;   */
+    height: 200px;
     margin-left: 10px;
     margin-right: 10px;
     overflow-y:  scroll;
     text-align: center;
-    padding-top: 32px;
+    margin-top: 40px; 
+    margin-bottom: 30px;
+    font-family: tiktokbold !important;
 } 
 
 .box1 h1{
@@ -101,8 +186,23 @@ nav section h1{
     line-height: 32px;  
     margin-top: 3px;
 }
+
+.watchnow{
+  background-color: rgb(238, 16, 61);
+  border: none;
+  color: white;
+  padding: 15px 60px; /*wasnot 60 pxefore */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 .outerbox2{
-    width:100wh; border:1px solid rgb(138, 69, 216);
+    width:100vw;
+    /* border:1px solid rgb(138, 69, 216);*/
    height: 450px;
     display: flex;
     margin-top: 10px;
@@ -110,29 +210,43 @@ nav section h1{
 }
 .outerbox2 .obox1{
     flex: 1;
-    border: 1px solid green;
+    height: 450px;
+/*border: 1px solid green;*/
     overflow: hidden;
 }
 .outerbox2 .obox1 img{ 
-    height: 450px;
-    
+    height: 450px; 
 }
 .outerbox2 .obox2{
     flex: 1;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
+    overflow: hidden; 
+}
+.outerbox2 .obox2 img{ 
+    height: 450px;  
 }
 .outerbox2 .obox3{
     flex: 1;
-    border: 1px solid purple;
+    /*border: 1px solid purple;*/
+    overflow: hidden;
+}
+.outerbox2 .obox3 img{ 
+    height: 450px;  
 }
 .outerbox2 .obox4{
     flex: 1;
-    border: 1px solid blueviolet;
+    /*border: 1px solid blueviolet;*/
+    overflow: hidden;
+}
+.outerbox2 .obox4 img{ 
+    height: 450px;  
 }
 .outerbox2 .obox5{
     flex: 1;
-    border: 1px solid silver;
+  /*border: 1px solid silver;*/
+  overflow: hidden;
 }
+
 
 .bottombox{
     width: 100%;
@@ -159,10 +273,13 @@ nav section h1{
 #qrcode{
     width:148px;
     height:44px;
-    border: 1px solid white;
-    border-radius: 10px;
+    border: 1px solid rgba(245, 244, 244, 0.562);
+    border-radius: 8px;
     font-size: 14px;
     padding:15px 30px 15px 30px;
+    position: relative;
+    top: -22px;
+    left: -15px;
 }
 
 .bottombox2{
@@ -173,28 +290,15 @@ nav section h1{
 
 .linebox1{
     flex:30;
-    border: 1px solid yellow;
+   /* border: 1px solid yellow;*/
 }
 
-.linebox2{
+.linebox2, .linebox3, .linebox4, .linebox5{
     flex:24;
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
 }
 
-.linebox3{
-    flex:24;
-    border: 1px solid yellow;
-}
 
-.linebox4{
-    flex:24;
-    border: 1px solid yellow;
-}
-
-.linebox5{
-    flex:24;
-    border: 1px solid yellow;
-}
 
 ul{
     list-style-type: none;
@@ -215,5 +319,24 @@ li{
 
 .bottombox3 div{
     flex: 1;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
+}
+
+#language{
+    height: 36px;
+    width: 172px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 0 16px;
+    cursor: pointer;
+    
+}
+#language2{
+    height: 36px;
+    width: 172px;
+    font-size: 16px;
+    padding: 0 16px;
+    cursor: pointer;
+    margin-left: 35px;
 }
